@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-26T14:49:19.379397" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuiteLogin" source="C:\Users\KEN\Desktop\HomeWork\4-1\advance-test\login-test\TestSuiteLogin.robot">
+<test id="s1-t1" name="Login with correct Username and Password" line="27">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:19.689292" level="INFO">Opening browser 'Chrome' to base url 'http://www.warering.online'.</msg>
+<arg>url=http://www.warering.online</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T14:49:19.689292" elapsed="2.606325"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:22.296620" level="INFO">Clicking button 'id:toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id:toggle-big-login-landing-drawer-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:22.295617" elapsed="0.138600"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>setup-user-drawer-title</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:22.434217" elapsed="0.248527"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:19.687298" elapsed="2.996451"/>
+</kw>
+<kw name="Input Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:22.684753" level="INFO">Typing text 'ken' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:22.684753" elapsed="0.142533"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:22.828283" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:22.828283" elapsed="0.171553"/>
+</kw>
+<arg>ken</arg>
+<arg>Password123</arg>
+<status status="PASS" start="2024-06-26T14:49:22.683749" elapsed="0.317078"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:23.001824" level="INFO">Clicking button 'id=setup-user-drawer-submit'.</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.000827" elapsed="0.099546"/>
+</kw>
+<kw name="Logout">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>title-outlet</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.101372" elapsed="0.233009"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:23.334381" level="INFO">Clicking image 'id=user-profile-image'.</msg>
+<arg>id=user-profile-image</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.334381" elapsed="0.067007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>account-user-drawer</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.401388" elapsed="0.019992"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:23.422382" level="INFO">Clicking button 'id=logout-user-btn'.</msg>
+<arg>id=logout-user-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.422382" elapsed="0.065589"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:23.101372" elapsed="0.387599"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-26T14:49:23.488971" elapsed="2.198155"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:19.686292" elapsed="6.000834"/>
+</test>
+<test id="s1-t2" name="Login with Incorrect Username not found" line="33">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:25.690118" level="INFO">Opening browser 'Chrome' to base url 'http://www.warering.online'.</msg>
+<arg>url=http://www.warering.online</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T14:49:25.690118" elapsed="3.639716"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:29.330829" level="INFO">Clicking button 'id:toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id:toggle-big-login-landing-drawer-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:29.330829" elapsed="0.157013"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>setup-user-drawer-title</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:29.487842" elapsed="0.257214"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:25.689112" elapsed="4.055944"/>
+</kw>
+<kw name="Input Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:29.747053" level="INFO">Typing text 'ken2' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:29.746056" elapsed="0.165543"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:29.912595" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:29.911599" elapsed="0.168997"/>
+</kw>
+<arg>ken2</arg>
+<arg>Password123</arg>
+<status status="PASS" start="2024-06-26T14:49:29.746056" elapsed="0.334540"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:30.081598" level="INFO">Clicking button 'id=setup-user-drawer-submit'.</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:30.080596" elapsed="0.093965"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>alert-setup-user-drawer</arg>
+<arg>not found user</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-06-26T14:49:30.174561" elapsed="0.242262"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:25.689112" elapsed="4.727711"/>
+</test>
+<test id="s1-t3" name="Login with Incorrect password" line="39">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:30.419818" level="INFO">Opening browser 'Chrome' to base url 'http://www.warering.online'.</msg>
+<arg>url=http://www.warering.online</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T14:49:30.419818" elapsed="2.443561"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:32.864378" level="INFO">Clicking button 'id:toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id:toggle-big-login-landing-drawer-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:32.864378" elapsed="0.152000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>setup-user-drawer-title</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.016378" elapsed="0.029004"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:30.418820" elapsed="2.626562"/>
+</kw>
+<kw name="Input Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:33.047378" level="INFO">Typing text 'ken' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.046378" elapsed="0.171765"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:33.219139" level="INFO">Typing text 'Password123Incorrect' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.218143" elapsed="0.236100"/>
+</kw>
+<arg>ken</arg>
+<arg>Password123Incorrect</arg>
+<status status="PASS" start="2024-06-26T14:49:33.046378" elapsed="0.407865"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:33.455234" level="INFO">Clicking button 'id=setup-user-drawer-submit'.</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.455234" elapsed="0.088105"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>alert-setup-user-drawer</arg>
+<arg>Password is incorrect</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.544342" elapsed="0.235795"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:30.418820" elapsed="3.361317"/>
+</test>
+<test id="s1-t4" name="Login with Incorrect Username not match ^[a-zA-Z0-9s]+$ regular expression" line="44">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:33.782655" level="INFO">Opening browser 'Chrome' to base url 'http://www.warering.online'.</msg>
+<arg>url=http://www.warering.online</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T14:49:33.782655" elapsed="2.489751"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:36.272965" level="INFO">Clicking button 'id:toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id:toggle-big-login-landing-drawer-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:36.272406" elapsed="0.141168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>setup-user-drawer-title</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:36.414576" elapsed="0.242988"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:33.781645" elapsed="2.875919"/>
+</kw>
+<kw name="Input Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:36.658562" level="INFO">Typing text 'ken*' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:36.658562" elapsed="0.142544"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:36.802107" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:36.801106" elapsed="0.173802"/>
+</kw>
+<arg>ken*</arg>
+<arg>Password123</arg>
+<status status="PASS" start="2024-06-26T14:49:36.657564" elapsed="0.317344"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:36.975909" level="INFO">Clicking button 'id=setup-user-drawer-submit'.</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:36.974908" elapsed="0.096515"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:42.239271" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-26T14:49:42.239271" level="FAIL">Element 'id=alert-setup-user-drawer' did not get text 'username must match' in 5 seconds.</msg>
+<arg>id=alert-setup-user-drawer</arg>
+<arg>username must match</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="FAIL" start="2024-06-26T14:49:37.072423" elapsed="5.169845">Element 'id=alert-setup-user-drawer' did not get text 'username must match' in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2024-06-26T14:49:33.781645" elapsed="8.460623">Element 'id=alert-setup-user-drawer' did not get text 'username must match' in 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Login with Incorrect Username longer than 30 characters" line="49">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:42.246273" level="INFO">Opening browser 'Chrome' to base url 'http://www.warering.online'.</msg>
+<arg>url=http://www.warering.online</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T14:49:42.246273" elapsed="3.192841"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:45.440141" level="INFO">Clicking button 'id:toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id:toggle-big-login-landing-drawer-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:45.439114" elapsed="0.254814"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>setup-user-drawer-title</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-26T14:49:45.693928" elapsed="0.265067"/>
+</kw>
+<status status="PASS" start="2024-06-26T14:49:42.245273" elapsed="3.714716"/>
+</kw>
+<kw name="Input Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:45.963004" level="INFO">Typing text 'usernnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:45.962001" elapsed="0.531197"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:46.493198" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:46.493198" elapsed="0.216757"/>
+</kw>
+<arg>${username_long_30}</arg>
+<arg>Password123</arg>
+<status status="PASS" start="2024-06-26T14:49:45.960989" elapsed="0.748966"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:46.710959" level="INFO">Clicking button 'id=setup-user-drawer-submit'.</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T14:49:46.710959" elapsed="0.162994"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<msg time="2024-06-26T14:49:48.805014" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<msg time="2024-06-26T14:49:52.876384" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DB7F05AAB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<msg time="2024-06-26T14:49:56.948305" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DB7FD908C0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<errors>
+<msg time="2024-06-26T14:49:48.805014" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<msg time="2024-06-26T14:49:52.876384" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DB7F05AAB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<msg time="2024-06-26T14:49:56.948305" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DB7FD908C0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7289cdc5900bc9a32895b5fe38ae7789/screenshot</msg>
+<msg time="2024-06-26T14:50:01.040047" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
